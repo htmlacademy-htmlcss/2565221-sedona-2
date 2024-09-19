@@ -2,7 +2,7 @@
 
 * Студент: [Егор Елин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2565221).
 * Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
-
+* Сайт: [Мой проект "Седона"](https://egore-r.github.io/2565221-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

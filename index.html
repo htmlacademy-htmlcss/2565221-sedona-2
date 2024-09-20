@@ -2,11 +2,125 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона - небольшой городок в Аризоне</title>
   </head>
   <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">Седона</h1>
+      <nav class="navigation-main">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-item-link logo" href="#">
+              <span class="visually-hidden">Логотип</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link" href="#">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-item-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-item ">
+            <a class="navigation-item-link" href="#"><span class="visually-hidden">Избранное</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link" href="#"><span class="nav-basket">Хочу сюда!</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-title">
+      <div class="div-image-welcome">
+        <img class="image-welcome" alt="Добро пожаловать в великолепную Седону" src="">
+        <img class="image-welcome" alt="Седона" src="">
+        <img class="image-welcome" alt="Лучше чем Гранд-Каньон" src="">
+      </div>
+      <h2 class="prewiew">Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</h2>
+        <h3 class="prewiew-down">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+        <section class="advantages-header">
+          <dl class="advantages-header-dl">
+            <dt class="advantages-header-dt">Настоящий городок</dt>
+            <dd class="advantages-header-dd">Седона — не аттракцион для туристов, там течёт своя жизнь</dd>
+          </dl>
+          <img alt="Домик в европейской деревне" src="">
+        </section>
+        <section class="advantages">
+          <dl class="advantages-list">
+            <dt class="advantages-item">Небольшая площадь</dt>
+            <dd class="advantages-item">Все достопримечательности находятся очень близко</dd>
+            <dt class="advantages-item">Красивая дорога</dt>
+            <dd class="advantages-item">Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
+            <dt class="advantages-item">Мало туристов</dt>
+            <dd class="advantages-item">Большинство едет в Гранд Каньон и толпится там</dd>
+          </dl>
+        </section>
+        <section class="bridge">
+          <img alt="Гранд-Каньон" src="">
+          <dl class="bridge-dl">
+            <dt class="bridge-item">Там есть мост дьявола</dt>
+            <dd class="bridge-item">Да, по нему можно пройти! Если вы осмелитесь, разумеется</dd>
+          </dl>
+        </section>
+        <h2 class="prewiew">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <h3 class="prewiew-down">Опытный персонал и качественное обслуживание!</h3>
+          <table class="advant">
+            <tr class="advant-header">
+              <td class="advant-body-img"><img class="advant-body-image" alt="Маленький домик" src=""></td>
+              <td class="advant-body-h2">Жильё</td>
+              <td class="advant-body-h3">Рекомендуем пожить в настоящем мотеле, всё как в кино!</td>
+            </tr>
+            <tr>
+              <td class="advant-body-img"><img class="advant-body-image" alt="Маленький бургер" src=""></td>
+              <td class="advant-body-h2">Еда</td>
+              <td class="advant-body-h3">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</td>
+            </tr>
+            <tr>
+              <td class="advant-body-img"><img class="advant-body-image" alt="Маленькая коробочка с бантом" src=""></td>
+              <td class="advant-body-h2">Сувениры</td>
+              <td class="advant-body-h3">Не только китайского, но и настоящего местного производства!</td>
+            </tr>
+          </table>
+          <section class="search-hotel">
+            <h2 class="prewiew">Заинтересовались?</h2>
+            <h3 class="prewiew-down">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+            <a class="search-hotel-btn" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          </section>
+      </main>
+      <footer class="page-footer">
+        <section class="news">
+          <span class="news-agree">Подпишитесь на рассылку</span>
+          <p class="news-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="news-promo" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="news-promo" for="email-news">Подписаться</label>
+            <input class="news-promo-input" type="email" id="email-news" placeholder="Ваш e-mail">
+          </form>
+        </section>
+        <h2 class="visually-hidden">Контакты</h2>
+        <nav class="social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="#">VK</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#">TG</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#">YT</a>
+            </li>
+          </ul>
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="cite-link" href="#"><img class="cite-link-image" alt="Сайт HTML Academy" src=""></a>
+        </nav>
+      </footer>
   </body>
 </html>

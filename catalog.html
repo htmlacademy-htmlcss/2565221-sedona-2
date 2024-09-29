@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Гостиницы в Седоне</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
@@ -95,7 +96,7 @@
       </ul>
     </fieldset>
     <fieldset class="price">
-      <legend class="price-type">Стоимость, ₽:</legend>
+      <legend class="row-group-name">Стоимость, ₽:</legend>
       <label class="price-label">
         <input class="price-input input" type="text" name="range" value="from">
         0
@@ -128,7 +129,7 @@
         </a>
         <span class="catalog-type">Гостиница</span>
         <span class="catalog-price">От 4000 ₽</span>
-        <a class="button-card-more" href="#">Подробнее</a>
+        <a class="button-card-more button" href="#">Подробнее</a>
         <button class="button button-card" type="button">В избранное</button>
         <span class="catalog-rating-text">Рейтинг: 8,5</span>
       </li>
@@ -139,7 +140,7 @@
         </a>
         <span class="catalog-type">Гостиница</span>
         <span class="catalog-price">От 5000 ₽</span>
-        <a class="button-card-more" href="#">Подробнее</a>
+        <a class="button-card-more button" href="#">Подробнее</a>
         <button class="button button-card" type="button">В избранном</button>
         <span class="catalog-rating-text">Рейтинг: 9,2</span>
       </li>
@@ -150,7 +151,7 @@
         </a>
         <span class="catalog-type">Гостиница</span>
         <span class="catalog-price">От 2500 ₽</span>
-        <a class="button-card-more" href="#">Подробнее</a>
+        <a class="button-card-more button" href="#">Подробнее</a>
         <button class="button button-card" type="button">В избранное</button>
         <span class="catalog-rating-text">Рейтинг: 6,9</span>
       </li>
@@ -161,7 +162,7 @@
         </a>
         <span class="catalog-type">Гостиница</span>
         <span class="catalog-price">От 1500 ₽</span>
-        <a class="button-card-more" href="#">Подробнее</a>
+        <a class="button-card-more button" href="#">Подробнее</a>
         <button class="button button-card" type="button">В избранное</button>
         <span class="catalog-rating-text">Рейтинг: 5,0</span>
       </li>
@@ -169,8 +170,8 @@
   </section>
   <div class="pagination">
     <ul class="pagination-list">
-      <li class="pagination-item">
-        <a class="pagination-number" href="#">1</a>
+      <li class="pagination-item-active">
+        <a class="pagination-number-active" href="#">1</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-number" href="#">2</a>
@@ -190,7 +191,7 @@
     </ul>
   </div>
   <section class="subscribe"></section>
-      <span class="subscribe-news">Подпишитесь на рассылку</span>
+      <p class="subscribe-news">Подпишитесь на рассылку</p>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscribe-label" for="email-news">Подписаться</label>
@@ -211,7 +212,7 @@
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">YT</a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="address-link" href="https://htmlacademy.ru/"><img class="address-link-image" alt="Сайт HTML Academy" src="images/icons/logo-developer.svg" width="85" height="23"></a>
     </div>
   </footer>

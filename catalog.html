@@ -73,7 +73,7 @@
             </li>
           </ol>
         </div>
-        <form class="row-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="row-form" action="https://echo.htmlacademy.ru/" method="post" data-test="filter">
           <fieldset class="row-group">
             <legend class="row-group-name">Инфраструктура:</legend>
             <ul class="checkbox">
@@ -186,7 +186,7 @@
         </div>
       </div>
     </div>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="container">
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -272,17 +272,17 @@
         </ul>
       </div>
     </div>
-    <section class="subscribe-light">
+    <section class="subscribe-light" data-test="subscribe">
       <p class="subscribe-news-light">Подпишитесь на рассылку</p>
       <p class="subscribe-text-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscribe-label" for="email-news"></label>
-        <input class="subscribe-input-light input" type="email" id="email-news" placeholder="Ваш e-mail">
+        <input class="subscribe-input-light input" type="email" id="email-news" placeholder="Ваш e-mail" required>
         <button class="button button-light" type="submit">Подписаться</button>
       </form>
     </section>
     <h2 class="visually-hidden">Контакты</h2>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="container">
         <div class="social">
           <ul class="social-list">

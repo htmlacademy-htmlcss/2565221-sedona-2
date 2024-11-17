@@ -9,10 +9,10 @@
 
 <body>
   <div class="page-container">
-    <div class="container">
-      <header class="page-header" data-test="header">
+    <header class="page-header" data-test="header">
+      <div class="container">
         <nav class="navigation">
-          <a class="logo" href="index.html">
+          <a class="logo" href="#">
             <img class="logo-image" src="images/icons/logo.svg" width="140" height="70" alt="Логотип">
           </a>
           <ul class="navigation-list">
@@ -49,17 +49,17 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-item-link button" href="#"><span class="nav-basket">Хочу сюда!</span></a>
+              <a class="navigation-user-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
     <main class="page-main" data-test="main">
       <section class="welcome" data-test="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="welcome-image" alt="Добро пожаловать в великолепную Седону" src="images/welcome.svg" width="460"
-          height="360">
+        <img class="welcome-image" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!"
+          src="images/welcome.svg" width="460" height="360">
       </section>
       <section class="description">
         <h2 class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -68,10 +68,8 @@
       <section class="advantages" data-test="advantages">
         <div class="advantages-item-w-image">
           <div class="advantages-card-light">
-            <div class="advantages-image-wrapper">
-              <p class="advantages-title-light">Настоящий городок</p>
-              <p class="advantages-text-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
+            <p class="advantages-title-light">Настоящий городок</p>
+            <p class="advantages-text-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img class="advantages-image" alt="Домик в европейской деревне" src="images/advantages-1.jpg" width="800"
             height="390">
@@ -97,10 +95,8 @@
         <div class="advantages-item-w-image">
           <img class="advantages-image" alt="Гранд-Каньон" src="images/advantages-2.jpg" width="800" height="390">
           <div class="advantages-card-light">
-            <div class="advantages-image-wrapper">
-              <p class="advantages-title-light">Там есть мост дьявола</p>
-              <p class="advantages-text-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
+            <p class="advantages-title-light">Там есть мост дьявола</p>
+            <p class="advantages-text-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
         </div>
       </section>
@@ -108,34 +104,34 @@
       <h3 class="preview-text">Опытный персонал и качественное обслуживание!</h3>
       <section class="benefits" data-test="service">
         <div class="benefits-item">
-          <div class="benefits-card benefits-first">
+          <div class="benefits-card benefits-home">
             <p class="benefits-title">Жильё</p>
             <p class="benefits-text">Рекомендуем пожить <br>в настоящем мотеле, всё как в кино!</p>
           </div>
         </div>
         <div class="benefits-item">
-          <div class="benefits-card benefits-second">
+          <div class="benefits-card benefits-food">
             <p class="benefits-title">Еда</p>
             <p class="benefits-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </div>
         <div class="benefits-item">
-          <div class="benefits-card benefits-third">
+          <div class="benefits-card benefits-souvenirs">
             <p class="benefits-title">Сувениры</p>
             <p class="benefits-text">Не только китайского, но и настоящего местного производства!</p>
           </div>
         </div>
       </section>
       <section class="search-promo">
-        <h2 class="preview-promo">Заинтересовались?</h2>
-        <h3 class="preview-text-promo">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        <h2 class="visually-hidden">Предложение поиска гостиницы в Седоне</h2>
+        <p class="preview-promo">Заинтересовались?</p>
+        <p class="preview-text-promo">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в
-          Седоне</h3>
-        <div class="search-button"><a class="search-promo-btn button" href="modal.html">Поиск гостиницы в Седоне</a>
-        </div>
+          Седоне</p>
+        <a class="search-promo-button button" href="modal.html">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe" data-test="subscribe">
-        <p class="subscribe-news">Подпишитесь на рассылку</p>
+        <h2 class="subscribe-news">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscribe-label" for="email-news"></label>
@@ -144,7 +140,6 @@
         </form>
       </section>
     </main>
-    <h2 class="visually-hidden">Контакты</h2>
     <footer class="page-footer" data-test="footer">
       <div class="container">
         <div class="social">
@@ -240,8 +235,8 @@
           <span class="modal-error-date-end">На эти даты есть свободные номера. Пока есть.</span>
           <label class="modal-label-count-adults" for="count-adults">Взрослые:</label>
           <button class="modal-button-adults-minus" type="button"><svg class="count-adults-icon-minus"
-              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-              viewBox="0 0 20 20">
+              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="currentColor" viewBox="0 0 20 20">
               <path fill="currentColor" fill-opacity="inherit" d="M3 9v2h14V9H3Z" />
             </svg></button>
           <button class="modal-button-adults-plus" type="button"><svg class="count-adults-icon-plus" aria-hidden="true"
@@ -252,7 +247,7 @@
           <input class="modal-input-count-adults" type="number" id="count-adults" value="2">
           <label class="modal-label-count-children" for="count-children">Дети:</label>
           <span class="modal-tooltip">
-            <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label-date">
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
               <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="20" height="20" fill="none" viewBox="0 0 20 20">
                 <path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd" />
@@ -262,13 +257,13 @@
               вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
           </span>
           <button class="modal-button-children-minus" type="button"><svg class="count-children-icon-minus"
-              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-              viewBox="0 0 20 20">
+              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="currentColor" viewBox="0 0 20 20">
               <path fill="currentColor" fill-opacity="inherit" d="M3 9v2h14V9H3Z" />
             </svg></button>
           <button class="modal-button-children-plus" type="button"><svg class="count-children-icon-plus"
-              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-              viewBox="0 0 20 20">
+              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="currentColor" viewBox="0 0 20 20">
               <path fill="currentColor" fill-opacity="inherit" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
             </svg></button>
           <input class="modal-input-count-children" id="count-children" type="number" value="2">
